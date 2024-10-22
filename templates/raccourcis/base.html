@@ -47,6 +47,7 @@
   <link rel="stylesheet" href="{% static 'assets/css/demo.css' %}">
 
 
+
   </head>
 
 
@@ -126,6 +127,14 @@
     
         <script src="{% static 'assets/js/setting-demo.js' %}"></script>
         <script src="{% static 'assets/js/demo.js' %}"></script>
+            <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <!-- Popper.js pour Bootstrap -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <!-- Bootstrap JS -->
+    {% comment %} <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- DataTables JS -->
+    <script src="https://cdn.datatables.net/2.1.8/js/dataTables.js"></script>
+    <script src="https://cdn.datatables.net/2.1.8/js/dataTables.bootstrap4.js"></script> {% endcomment %}
         <script>
           $("#lineChart").sparkline([102, 109, 120, 99, 110, 105, 115], {
             type: "line",
