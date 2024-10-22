@@ -5,3 +5,7 @@ from django.shortcuts import render
 # Vue pour le tableau de bord
 def dashboard(request):
     return render(request, 'utilisateurs/dashboard.html')
+
+
+def connexion(request):
+    return render(request, 'utilisateurs/connexion.html')
