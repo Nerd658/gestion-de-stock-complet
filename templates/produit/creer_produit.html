@@ -1,0 +1,13 @@
+{% extends 'raccourcis/base.html' %}
+
+{% block title %}Tableau de Bord{% endblock %}
+
+{% block content %}
+
+<form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Créer le produit</button>
+</form>
+
+{% endblock %}

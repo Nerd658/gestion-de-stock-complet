@@ -1,0 +1,19 @@
+{% comment %} {% extends 'raccourcis/base.html' %}
+
+{% block title %}Tableau de Bord{% endblock %}
+
+{% block content %}
+    <h1>Bienvenue sur le tableau de bord produit</h1>
+    <br>
+    <p>
+        <h1>lister  produit</h1>
+    </p>
+   <span>
+    {% include 'produit/modif_produit.html' %}
+    <br>
+    {% include 'produit/sup_produit.html' %}
+    <br>
+    <h1> <a href="{% url 'creer_un_produit' %}">creer produit</a> </h1>
+    <br>
+   </span> 
+{% endblock %} {% endcomment %}
