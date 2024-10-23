@@ -95,7 +95,7 @@
                   </a>
                 </li>
                 <li>
-                  <a href="tables/datatables.html">
+                  <a href="{% url 'creer_un_produit' %}">
                     <span class="sub-item">Ajouter un produit</span>
                   </a>
                 </li>
@@ -141,14 +141,14 @@
           </li>
           
           <li class="nav-item">
-            <a href="widgets.html">
+            <a href="{% url 'connexion' %}">
               <i class="fas fa-users"></i>
               <p>Comptes</p>
               <span class="badge badge-success"></span>
             </a>
           </li>
           <li class="nav-item">
-            <a href="#">
+            <a href="{% url 'connexion' %}">
               <i class="fas fa-sign-out-alt"></i>
               <p>Deconnexion</p>
               <span class="badge badge-success"></span>
