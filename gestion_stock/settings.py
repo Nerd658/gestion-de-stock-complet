@@ -83,16 +83,8 @@ WSGI_APPLICATION = "gestion_stock.wsgi.application"
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'gestion_stock',  # Nom de ta base de données PostgreSQL
-        'USER': 'monutilisateur',  # Ton utilisateur PostgreSQL
-        'PASSWORD': 'monmotdepasse',  # Le mot de passe de l'utilisateur PostgreSQL
-        'HOST': 'localhost',
-        'PORT': '5432',
-    },
-    'sqlite': {
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',  # Chemin de la base de données SQLite
     }
 }
 
